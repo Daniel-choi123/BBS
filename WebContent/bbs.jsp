@@ -13,7 +13,7 @@
 <title>JSP 웹사이트 게시판</title>
 </head>
 <body>
-		<%
+		<%  
 			String userID = null;
 		if (session.getAttribute("userID") != null){
 			userID = (String) session.getAttribute("userID");
