@@ -3,4 +3,29 @@
   <groupId>BBS</groupId>
   <artifactId>BBS</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>Users/choiyounjin/eclipse-workspace/first_web_project</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>15</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+   <dependencies>
+ <dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.20</version>
+		<scope>provided</scope>
+	</dependency>
+ <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.19</version>
+</dependency>
+</dependencies>
 </project>
