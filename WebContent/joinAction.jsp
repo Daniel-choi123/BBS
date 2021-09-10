@@ -27,7 +27,7 @@
 	if(userID != null){
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('you are already logged in')");
+		script.println("alert('success')");
 		script.println("location.href = 'main.jsp'");
 		script.println("</script>");
 	}
@@ -42,7 +42,7 @@
 		UserDAO userDAO = new UserDAO();
 		int result = userDAO.join(user);
 		
-		out.println(result);
+		//out.println(result);
 		
 		if (result  == -2 ){
 			PrintWriter script = response.getWriter();
